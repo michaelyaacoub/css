@@ -1,0 +1,16 @@
+
+/*
+    # this is a css grid funtion
+    # called reapet and takes how many grids as and size as an arg
+    # this function says, make sure my columns doesn't go below 250px
+      but allow them to expend as big as 1fr
+    # when space is available, have
+ */
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+ }
+
+
+
