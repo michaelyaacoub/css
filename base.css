@@ -5,7 +5,8 @@ body {
     background: rgb(242, 242, 242);
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
-    padding: 5rem;
+    margin: 2rem;
+
 }
 
 .card {

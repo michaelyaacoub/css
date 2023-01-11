@@ -1,0 +1,27 @@
+img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.card>p {
+    padding: 1rem;
+}
+.card>h3 {
+    font-size: 1rem;
+}
+.img-holder>img {
+    height: auto;
+    width: 100%;
+}
+header {
+    margin: 2rem;
+}
+header>h3 {
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem blue;
+
+}
