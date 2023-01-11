@@ -1,1 +1,3 @@
-alert("Hello! This is an alart for the new page!");
+function TempAlert() {
+    alert("This feature is coming soon");
+}

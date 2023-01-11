@@ -13,15 +13,16 @@ img {
     height: auto;
     width: 100%;
 }
-header {
+.header {
+    display: flex;
+    padding: 2rem;
     margin: 2rem;
-}
-header>h3 {
     color: black;
     border: 2px solid black;
     border-radius: 0.25rem;
-    padding: 2rem;
     text-align: center;
     box-shadow: 0.25rem 0.25rem blue;
-
+}
+.header>h3, button {
+    text-align: center;
 }
