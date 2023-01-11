@@ -1,4 +1,13 @@
+# Set a section for a grid and add dvis as much as a child element
+# Give 1rem of gap instead of giving margins, to always gurantee to have equal gap between elements
+# One way to create grid is by using the
 
 
+# 1fr means one fractional unit and is a %100 of the available space
+
+
+
+
+Referance:-
 Fireship.io:
 https://fireship.io/lessons/three-responsive-css-grid-layouts/
