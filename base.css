@@ -3,9 +3,10 @@
 /* rgb(26, 20, 211)*/
 body {
     background: rgb(242, 242, 242);
-    color: #fff;
+    color: rgb(23, 13, 13);
     font-family: 'Noto Sans', sans-serif;
     margin: 2rem;
+
 
 }
 

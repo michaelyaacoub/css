@@ -1,3 +1,17 @@
+.header, .footer-container {
+    padding: 2rem;
+    margin: 2rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem blue;
+}
+
+.header>h3, button {
+    text-align: center;
+}
+
 img {
     height: 250px;
     width: 100%;
@@ -12,17 +26,4 @@ img {
 .img-holder>img {
     height: auto;
     width: 100%;
-}
-.header {
-    display: flex;
-    padding: 2rem;
-    margin: 2rem;
-    color: black;
-    border: 2px solid black;
-    border-radius: 0.25rem;
-    text-align: center;
-    box-shadow: 0.25rem 0.25rem blue;
-}
-.header>h3, button {
-    text-align: center;
 }
