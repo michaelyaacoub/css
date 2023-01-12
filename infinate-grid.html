@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>CSS</title>
-
         <style>
             @import url(./infinate-grid.css);
             @import url(./base.css);
@@ -15,7 +14,9 @@
         <section class="header">
             <header>
                 <h3>This is my Journey</h3>
-                <button onclick="TempAlert()">Add Post</button>
+                <button onclick="addPost()">
+                    <h6 id="btn-post">Add Post</h6>
+                </button>
             </header>
         </section>
 
@@ -135,7 +136,9 @@
 
         <!-- footer -->
         <section class="footer">
-            <footer> COMING SOON!</footer>
+            <div class="footer-container">
+                <footer> COMING SOON!</footer>
+            </div>
         </section>
 
         <!-- JS -->
