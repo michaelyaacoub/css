@@ -1,3 +1,4 @@
+// load html first then preform events
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#btn-post').addEventListener('click', function () {
         if ('click') {
