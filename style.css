@@ -1,33 +1,51 @@
-.header, .footer-container {
-    padding: 2rem;
-    margin: 2rem;
+/* header elements styling */
+.header-fr,
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
     color: black;
     border: 2px solid black;
     border-radius: 0.25rem;
-    text-align: center;
     box-shadow: 0.25rem 0.25rem blue;
 }
 
-#btn-post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 120px;
+.header-fr>h3 {
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.5px solid black;
 }
 
+#btn-post {
+    padding: 1rem;
+    margin: 0 5rem;
+    width: 12rem;
+    align-items: center;
+}
+
+/* img/card styling  */
 img {
-    height: 250px;
+    height: 280px;
     width: 100%;
     object-fit: cover;
 }
+
 .card>p {
     padding: 1rem;
+    padding: 0.5rem;
 }
+
 .card>h3 {
     font-size: 1rem;
 }
+
 .img-holder>img {
     height: auto;
     width: 100%;
 }
+
+/* footer styling */
