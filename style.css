@@ -1,6 +1,5 @@
 /* header elements styling */
-.header-fr,
-.footer-container {
+.header-fr {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -36,7 +35,7 @@ img {
 
 .card>p {
     padding: 1rem;
-    padding: 0.5rem;
+
 }
 
 .card>h3 {
@@ -49,3 +48,13 @@ img {
 }
 
 /* footer styling */
+.footer-container {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem blue;
+}

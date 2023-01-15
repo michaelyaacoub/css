@@ -1,0 +1,31 @@
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        background-color: brown;
+    }
+
+    .basic-grid {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    }
+
+    /* img/card styling  */
+    img {
+        height: 280px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card>p {
+        padding: 1.5rem;
+    }
+
+    .card>h3 {
+        font-size: 1rem;
+    }
+
+    .img-holder>img {
+        height: auto;
+        width: 100%;
+    }
+}
