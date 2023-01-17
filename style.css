@@ -33,7 +33,7 @@ img {
     object-fit: cover;
 }
 
-.card-body {
+.card__description {
     padding: 0 1rem;
 
 }
