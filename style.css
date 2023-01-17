@@ -1,6 +1,5 @@
 /* header elements styling */
-.header-fr,
-.footer-container {
+.header-fr {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -34,18 +33,32 @@ img {
     object-fit: cover;
 }
 
-.card>p {
-    padding: 1rem;
-    padding: 0.5rem;
+.card__description {
+    padding: 0 1rem;
+
 }
 
-.card>h3 {
-    font-size: 1rem;
-}
-
-.img-holder>img {
+/* .card__image>img {
     height: auto;
     width: 100%;
+    font-size: 1rem;
+} */
+
+/* card header */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
 }
 
 /* footer styling */
+.footer-container {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem blue;
+}
