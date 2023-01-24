@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload-Post</title>
+
+    <style>
+        @import url(./css/form.css);
+    </style>
+</head>
+
+<body>
+    <form class="form-container">
+        <!-- for img -->
+        <div class="form_img">
+            <label for="image">Image Activity</label>
+            <input type="file" class="img_zone">
+        </div>
+
+        <!-- for location -->
+        <div class="form_location">
+            <label for="location">Where was this?</label>
+            <input type="location" placeholder="Add the location of this Memory">
+        </div>
+
+        <!-- for tags -->
+        <div class="form_tags"></div>
+
+        <!-- for time of the day -->
+        <div class="form-time"></div>
+
+        <!-- for descrp -->
+        <div class="form_description">
+            <label for="description">Description</label>
+            <p> You could share things like:
+            <ul>
+                <li>What was unique about this place to you :)</li>
+                <li>Something funny happened :D</li>
+                <li>How did it feel like to be with people there?</li>
+                <li>Tell your story</li>
+            </ul>
+            </p>
+            <textarea name="text" placeholder="Tell a short story about this memory :D"></textarea>
+        </div>
+    </form>
+    <button>Post :D</button>
+</body>
+
+</html>
