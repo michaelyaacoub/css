@@ -17,6 +17,13 @@
     box-shadow: 0.25rem 0.25rem blue;
 }
 
+/* card header */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
 .page_title {
     font-family: 'Lobster', cursive;
     font-size: 2rem;
@@ -56,21 +63,20 @@ img {
     font-size: 1rem;
 } */
 
-/* card header */
-.card-header {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-}
 
 /* footer styling */
 .footer-container {
-    align-items: center;
-    text-align: center;
     padding: 30px;
     margin: 30px;
     color: black;
     border: 2px solid black;
     border-radius: 0.25rem;
     box-shadow: 0.25rem 0.25rem blue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
