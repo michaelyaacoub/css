@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fav-icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Nostalgic/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Nostalgic/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Nostalgic/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./Nostalgic/favicon_io/site.webmanifest">
+
+    <title>Nostalgic</title>
+    <style>
+        @import url(./css/infinate-grid.css);
+        @import url(./css/base.css);
+        @import url(./css/style.css);
+        @import url(./css/media-query.css);
+        @import url(./css/form.css);
+        @import url(./script.js);
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <section>
+        <header class="header-fr">
+            <h3>Share A Memory</h3>
+            <h1 class="page_title">Nostalgic</h1>
+            <button data-modal-target="#modal">Add Post</button>
+        </header>
+    </section>
+
+    <!-- form to submit -->
+    <section>
+
+        <form class="modal" id="modal">
+            <div class="form_header">
+                <label for="title">Posting Time, Yay!</label>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <!-- for image -->
+            <div class="form_img">
+                <label for="image">Image activity</label>
+                <input type="file" class="img_zone" required>
+            </div>
+
+            <!-- for location -->
+            <div class="form_location">
+                <label for="location">Where was this? ⚓</label>
+                <input type="location" placeholder="Add the location of this Memory">
+            </div>
+
+            <!-- for tags -->
+            <div class="form_tags">
+                <label for="tags">Put all the fun tags</label>
+                <input type="tags" placeholder="#tags ☺">
+            </div>
+
+            <!-- for time of the day -->
+            <div class="form-time">
+                <label for="daytime">What time of the day was captured? ☆ ☽ ❄ ☂</label>
+                <select id="daytime" name="time_of_day">
+                    <option value="sunrise">Sunrise 🌅</option>
+                    <option value="morning">Morning 🔆</option>
+                    <option value="afternoon">Afternoon 🌞</option>
+                    <option value="sunset">Sunset 🌇</option>
+                    <option value="evening">Evening 🌚</option>
+                    <option value="night">Night 🌜</option>
+                </select>
+            </div>
+
+            <!-- for descrpiption -->
+            <div class="form_description">
+                <label for="description">Description</label>
+                <p> You could share things like:
+                <ul>
+                    <li>What was unique about this place to you ☺</li>
+                    <li>Something funny happened ☻</li>
+                    <li>Tell your story</li>
+                </ul>
+                </p>
+                <textarea name="text" placeholder="Tell a short story about this memory ☺"></textarea>
+            </div>
+            <button id="temp">POST IT</button>
+        </form>
+        <div id="overlay"></div>
+    </section>
+
+    <!-- post body -->
+    <section class="basic-grid">
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_11e9.jpg">
+            </div>
+            <h3>Downtown Beirut, LB</h3>
+            <p class="card__description">
+                I lived great days and survived tough hardships in Lebanon.
+                This capture was taken in March 2019 on Rouchie Bay, I believe--during my last days in Lebanon right
+                before I fly.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_11ee.jpg">
+            </div>
+            <h3>Sin Al-Fiel Bridge, LB</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/Mp2ZsmVCTbaVkMPvuq6WMA_thumb_107f.jpg">
+            </div>
+            <h3>Luxury, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_17a.jpg">
+            </div>
+            <h3>Mount Sinai, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_17d.jpg">
+            </div>
+            <h3>Alexandira, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_183.jpg">
+            </div>
+            <h3>Cairo Tower, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_18b.jpg">
+            </div>
+            <h3>Ras Sedr, Sinia, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_18c.jpg">
+            </div>
+            <h3>Sahara Desert, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/UNADJUSTEDNONRAW_thumb_204.jpg">
+            </div>
+            <h3>Wadi Al-Ryan, Fayoum, EG</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/DSC00120.JPG">
+            </div>
+            <h3>Location</h3>
+            <p class="card__description">
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/IMG_9160.JPG">
+            </div>
+            <h3>Location</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/2017-08-02 17.31.26.jpg">
+            </div>
+            <h3>Cedars Of Lebanon, LB</h3>
+            <p class="card__description">
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                the visual form of a document or a typeface without relying
+                on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            </p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+        <div class="footer-container">
+            <footer>
+                <h2>HOME</h2>
+                <h2>ABOUT</h2>
+            </footer>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
