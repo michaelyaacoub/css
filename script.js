@@ -21,12 +21,13 @@ openModalButtons.forEach(button => {
   })
 })
 
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
+// this function would allow to press in white space to close the form
+// overlay.addEventListener('click', () => {
+//   const modals = document.querySelectorAll('.modal.active')
+//   modals.forEach(modal => {
+//     closeModal(modal)
+//   })
+// })
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
