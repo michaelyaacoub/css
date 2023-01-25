@@ -1,40 +1,87 @@
-body {
-    background: #f2f2f2;
-    font-family: 'Noto Sans', sans-serif;
-    margin: 2rem;
+label {
+    padding-bottom: 10px;
+    text-align: left;
+    align-items: left;
+    font-size: 1.2rem;
 }
 
-form {
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
-.form-container {
+input,
+select {
     display: flex;
     flex-direction: column;
+    width: 400px;
+    height: 30px;
+    background-color: inherit;
+    outline: none;
+    border-style: none;
+    border-bottom: solid 2px black;
+}
+
+select {
+    font-size: 18px;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+    resize: inherit;
+    font-size: 1rem;
+    outline: none;
+    background-color: inherit;
+    border: black 2px solid;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 5;
+    background-color: #f2f2f2;
     padding: 2rem;
-    height: 100%;
     overflow: hidden;
     color: black;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 0.25rem;
-    box-shadow: 0.25rem 0.25rem blue;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(.8);
+}
+
+.form_img,
+.form_location,
+.form_tags,
+.form-time,
+.form_description {
+    padding: 10px 0 10px 0;
+}
+
+.form_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
 }
 
 .form_img {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
     color: black;
-    border-bottom: 2px solid black;
-}
-
-label {
-    text-align: left;
-    align-items: left;
-    font-size: 1.5rem;
-
 }
 
 .img_zone {
@@ -44,15 +91,25 @@ label {
     text-align: center;
 }
 
-input {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 30px;
+button {
+    width: 100px;
+    height: 50px;
 }
 
-textarea {
-    width: 400px;
-    height: 150px;
-    resize: inherit;
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    /* so we can click on the button when isn't active */
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }

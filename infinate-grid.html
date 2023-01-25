@@ -18,6 +18,7 @@
         @import url(./css/base.css);
         @import url(./css/style.css);
         @import url(./css/media-query.css);
+        @import url(./css/form.css);
         @import url(./script.js);
     </style>
 </head>
@@ -28,25 +29,65 @@
         <header class="header-fr">
             <h3>Share A Memory</h3>
             <h1 class="page_title">Nostalgic</h1>
-            <button id="btn-post">
-                Add Post
-            </button>
+            <button data-modal-target="#modal">Add Post</button>
         </header>
     </section>
 
+    <!-- form to submit -->
+    <section>
 
-    <!-- <div class="card">
-        <div class="card__body">
-            <img class="card__image"
-                src="https://images.unsplash.com/photo-1572333746181-6add58286f09?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                alt="">
-            <h2 class="card__title">The Best at Home Gourmet Meals</h2>
-            <p class="card__description">Need to add a little spice to your life? Look no further with our top gourmet
-                meals to make at home.</p>
-        </div>
-        <a href="#" class="card__link">Read Full Article</a>
-    </div> -->
+        <form class="modal" id="modal">
+            <div class="form_header">
+                <label for="title">Posting Time, Yay!</label>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <!-- for image -->
+            <div class="form_img">
+                <label for="image">Image activity</label>
+                <input type="file" class="img_zone">
+            </div>
 
+            <!-- for location -->
+            <div class="form_location">
+                <label for="location">Where was this? ⚓</label>
+                <input type="location" placeholder="Add the location of this Memory">
+            </div>
+
+            <!-- for tags -->
+            <div class="form_tags">
+                <label for="tags">Put all the fun tags</label>
+                <input type="tags" placeholder="#tags ☺">
+            </div>
+
+            <!-- for time of the day -->
+            <div class="form-time">
+                <label for="daytime">What time of the day was captured? ☆ ☽ ❄ ☂</label>
+                <select id="daytime" name="time_of_day">
+                    <option value="sunrise">Sunrise 🌅</option>
+                    <option value="morning">Morning 🔆</option>
+                    <option value="afternoon">Afternoon 🌞</option>
+                    <option value="sunset">Sunset 🌇</option>
+                    <option value="evening">Evening 🌚</option>
+                    <option value="night">Night 🌜</option>
+                </select>
+            </div>
+
+            <!-- for descrpiption -->
+            <div class="form_description">
+                <label for="description">Description</label>
+                <p> You could share things like:
+                <ul>
+                    <li>What was unique about this place to you ☺</li>
+                    <li>Something funny happened ☻</li>
+                    <li>Tell your story</li>
+                </ul>
+                </p>
+                <textarea name="text" placeholder="Tell a short story about this memory ☺"></textarea>
+            </div>
+            <button id="temp">POST IT</button>
+        </form>
+        <div id="overlay"></div>
+    </section>
 
     <!-- post body -->
     <section class="basic-grid">

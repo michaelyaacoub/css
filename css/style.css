@@ -17,6 +17,10 @@
     box-shadow: 0.25rem 0.25rem blue;
 }
 
+.page_title {
+    text-align: center;
+    align-items: center;
+}
 /* card header */
 .card-header {
     display: flex;
@@ -31,18 +35,8 @@
 }
 
 .header-fr>h3 {
-    display: flex;
-    justify-content: flex-start;
     padding: 1rem;
-    margin: 1rem;
     border: 0.5px solid black;
-}
-
-#btn-post {
-    padding: 1rem;
-    margin: 0 5rem;
-    width: 12rem;
-    align-items: center;
 }
 
 /* img/card styling  */
