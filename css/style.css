@@ -18,24 +18,25 @@
 }
 
 .page_title {
+    text-align: center;
+    align-items: center;
+}
+/* card header */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.page_title {
     font-family: 'Lobster', cursive;
     font-size: 2rem;
     color: blue;
 }
 
 .header-fr>h3 {
-    display: flex;
-    justify-content: flex-start;
     padding: 1rem;
-    margin: 1rem;
     border: 0.5px solid black;
-}
-
-#btn-post {
-    padding: 1rem;
-    margin: 0 5rem;
-    width: 12rem;
-    align-items: center;
 }
 
 /* img/card styling  */
@@ -50,27 +51,19 @@ img {
 
 }
 
-/* .card__image>img {
-    height: auto;
-    width: 100%;
-    font-size: 1rem;
-} */
-
-/* card header */
-.card-header {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-}
-
 /* footer styling */
 .footer-container {
-    align-items: center;
-    text-align: center;
     padding: 30px;
     margin: 30px;
     color: black;
     border: 2px solid black;
     border-radius: 0.25rem;
     box-shadow: 0.25rem 0.25rem blue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
