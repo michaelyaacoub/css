@@ -1,5 +1,5 @@
 /* fonts */
-        /* header-font */
+/* header-font */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+SignWriting&display=swap');
 
 /* header elements styling */
@@ -17,19 +17,17 @@
     box-shadow: 0.25rem 0.25rem blue;
 }
 
-.page_title {
-    text-align: center;
-    align-items: center;
-}
 /* card header */
 .card-header {
     display: flex;
     flex-direction: row;
+    text-align: center;
+    align-items: center;
     padding: 1rem;
 }
 
 .page_title {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive, 'Noto Sans SignWriting', sans-serif;
     font-size: 2rem;
     color: blue;
 }
