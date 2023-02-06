@@ -1,4 +1,4 @@
-// load html first then perform events
+// load html elements first then perform events
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#temp').addEventListener('click', function () {
         if ('click') {
