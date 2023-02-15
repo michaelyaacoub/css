@@ -1,8 +1,12 @@
+/* fonts */
+/* header-font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+SignWriting&display=swap');
+
 /* header elements styling */
 .header-fr {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 30px;
@@ -13,17 +17,24 @@
     box-shadow: 0.25rem 0.25rem blue;
 }
 
-.header-fr>h3 {
+/* card header */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
     padding: 1rem;
-    margin: 1rem;
-    border: 0.5px solid black;
 }
 
-#btn-post {
+.page_title {
+    font-family: 'Lobster', cursive, 'Noto Sans SignWriting', sans-serif;
+    font-size: 2rem;
+    color: blue;
+}
+
+.header-fr>h3 {
     padding: 1rem;
-    margin: 0 5rem;
-    width: 12rem;
-    align-items: center;
+    border: 0.5px solid black;
 }
 
 /* img/card styling  */
@@ -38,27 +49,19 @@ img {
 
 }
 
-/* .card__image>img {
-    height: auto;
-    width: 100%;
-    font-size: 1rem;
-} */
-
-/* card header */
-.card-header {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-}
-
 /* footer styling */
 .footer-container {
-    align-items: center;
-    text-align: center;
     padding: 30px;
     margin: 30px;
     color: black;
     border: 2px solid black;
     border-radius: 0.25rem;
     box-shadow: 0.25rem 0.25rem blue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
